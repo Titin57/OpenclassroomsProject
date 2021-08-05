@@ -8,13 +8,30 @@ body {
   width: auto;
 }
 
-h1, #header p{
-  margin: 10px;
+#header{
+  padding: 0 40px 0 40px;
+}
+
+/*#header p{
+  margin-bottom: 40px;
+}*/
+
+h1{
+  font-size: 1.5em;
+  font-weight: 900;
+}
+
+h2{
+  font-weight: 900
 }
 
 h3{
   font-weight: bold;
   margin-bottom: 10px;
+}
+
+p{
+  margin: 0;
 }
 
 .star{
@@ -42,7 +59,8 @@ li{
 
 .inscrire{
   grid-area: inscrire;
-  text-align: center;
+  text-align: right;
+  padding-right: 20px;
 }
 
 .hebergement{
@@ -76,25 +94,29 @@ img{
 
 form{
   display: flex;
-  margin: 10px;
+  margin-bottom: 40px;
+  margin-top: 40px;
+  /*margin: 10px;*/
 }
 
 form i{
-  width: 40px;
-  height: 40px;
-  border-bottom-left-radius: 10px;
-  border-top-left-radius: 10px;
+  width: 50px;
+  height: 50px;
+  border-bottom-left-radius: 15px;
+  border-top-left-radius: 15px;
   line-height: 40px;
-  background-color: lightgray;
+  background-color: #F2F2F2;
   text-align: center;
 }
 
 input{
-  height: 36px;
-  border:solid lightgray 1px;
+  height: 46px;
+  width: 250px;
+  border:solid #F2F2F2 1px;
   position: relative;
   left: -1px;
 }
+
 
 .formulaire button{
   width: 40px;
@@ -103,18 +125,23 @@ input{
 
 .search i{
   color: white;
-  background-color: blue;
-  border-radius: 5px;
+  background-color: #0065FC;
+  border-radius: 15px;
   position: relative;
-  left: -50px;
+  left: -55px;
   top:-4px;
+  line-height: 50px;
+}
+
+.ico i{
+  line-height: 50px;
 }
 
 .filtres {
   display: flex;
   flex-direction: column;
-  margin: 5px;
-  /*align-items: center;*/
+  /*margin: 5px;
+  align-items: center;*/
   border-radius: 20px;
 }
 
@@ -123,8 +150,8 @@ input{
   width: 40px;
   height: 40px;
   border-radius: 20px;
-  background-color: lightblue;
-  color: blue;
+  background-color: #DEEBFF;
+  color: #0065FC;
   line-height: 40px;
 }
 
@@ -145,12 +172,12 @@ input{
 .papa1, .papa2, .papa4{
   max-width: 130px;
   height: 40px;
-  margin: 10px;
+  /*margin: 10px;*/
 }
 
 .papa3{
   max-width: 190px;
-  margin: 10px;
+  /*margin: 10px;*/
 }
 
 .papa2{
@@ -181,10 +208,17 @@ button{
   height: 40px;
   padding-left: 40px;
   border-radius: 20px;
+  border: solid #F2F2F2 2px;
   background-color: white;
 }
 
+.info{
+  display: flex;
+}
+
 .info i{
+  color: #0065FC;
+  background-color: white;
   margin: 0px 15px 30px 0;
 }
 
@@ -200,7 +234,7 @@ article{
 
 aside{
   min-width: 280px;
-  background-color: lightgray;
+  background-color: #F2F2F2;
   padding: 20px;
 }
 
@@ -307,7 +341,7 @@ figcaption{
 footer{
   margin: 50px auto;
   padding: 20px;
-  background-color: lightgray;
+  background-color: #F2F2F2;
 }
 
 .footer{
@@ -346,7 +380,7 @@ footer{
     height: 40px;
     position: relative;
     line-height: initial;
-    background-color: blue;
+    background-color: #0065FC;
     color: white;
     top: -44px;
     left: -44px;
@@ -374,7 +408,7 @@ footer{
   }
 
   article, aside{
-    background-color: lightgray;
+    background-color: #F2F2F2;
     border-radius: 20px;
     padding: 20px;
     margin: 0;
