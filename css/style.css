@@ -12,6 +12,9 @@ body {
   padding: 0 40px 0 40px;
 }
 
+nav a{
+  text-decoration: none;
+}
 
 h1{
   font-size: 1.5em;
@@ -31,7 +34,15 @@ h3{
 .star{
   position: absolute;
   bottom: 25px;
+  /*color: blue;*/
+}
+
+.fa-star{
   color: blue;
+}
+
+.a, .b{
+  color: lightgray;
 }
 
 ul{
@@ -56,11 +67,13 @@ li{
 .inscrire{
   grid-area: inscrire;
   text-align: right;
+  font-weight: 900;
   padding-right: 20px;
 }
 
 .hebergement{
   text-align: center;
+  font-weight: 500;
   grid-area: hebergement;
 }
 
@@ -82,6 +95,8 @@ img{
 
 .img img{
   width: 375px;
+  height: 130px;
+  object-fit: cover;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
   border-bottom-left-radius: 0;
@@ -279,6 +294,7 @@ aside{
 
 .pop img{
   margin: 5px;
+  object-fit: cover;
 }
 
 figure{
@@ -296,8 +312,11 @@ figure{
   margin: 10px 0;
 }
 
+
 .activites2 figure img{
   width: 375px;
+  height: 260px;
+  object-fit: cover;
   border-radius: 20px;
   margin: 0 auto;
 }
@@ -316,6 +335,7 @@ figcaption{
 .activites2 figcaption{
   transform: translateY(-100px);
   background-color: white;
+  padding: 10px 20px;
 }
 
 .act{
@@ -357,6 +377,11 @@ footer{
   text-decoration: none;
   color: black;
 }
+
+.footer p a:hover{
+  color: blue;
+}
+
 
 
 
